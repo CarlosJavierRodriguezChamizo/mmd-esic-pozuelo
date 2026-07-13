@@ -79,6 +79,20 @@
   <a href="#hero" class="skip-link">Saltar al contenido</a>
 
   <!-- ===================================================================
+       BARRA DE ANUNCIO
+       CIALDINI · ESCASEZ + RECIPROCIDAD: oferta de lanzamiento limitada
+       (plazas que se agotan + cuenta atrás + regalo de 3 meses Premium)
+       =================================================================== -->
+  <div class="announce" id="announce" role="region" aria-label="Oferta de lanzamiento">
+    <p class="announce__text">
+      🎉 <strong>Oferta de lanzamiento:</strong> las primeras 1.000 personas se llevan
+      <strong>3 meses Premium gratis</strong>. Quedan
+      <strong id="announce-spots">217</strong> plazas · termina en
+      <strong id="announce-timer" aria-label="Tiempo restante">47:59:59</strong>
+    </p>
+  </div>
+
+  <!-- ===================================================================
        HEADER / CABECERA
        Desktop: logotipo · menú de navegación · CTA
        Móvil:   logotipo · CTA · menú hamburguesa
@@ -136,6 +150,20 @@
         <div class="hero__media">
           <img src="img/hero-app.svg" alt="Pantalla de la aplicación Kápital mostrando el ahorro acumulado" width="360" height="440" loading="eager">
         </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         FRANJA DE AUTORIDAD
+         CIALDINI · AUTORIDAD: sellos de confianza, cumplimiento normativo
+         y menciones en medios para respaldar la credibilidad.
+         =================================================================== -->
+    <section class="authority" aria-label="Confianza y respaldo">
+      <div class="container authority__inner">
+        <span class="authority__item">🔒 Datos cifrados · RGPD</span>
+        <span class="authority__item">🏛️ Conforme a la normativa europea de pagos</span>
+        <span class="authority__item">⭐ 4,8/5 · +12.000 reseñas verificadas</span>
+        <span class="authority__item">📰 Hablan de nosotros medios de referencia</span>
       </div>
     </section>
 
@@ -229,8 +257,56 @@
             </div>
           </div>
 
+          <!-- CIALDINI · COMPROMISO Y COHERENCIA: micro-compromiso público y
+               voluntario que aumenta la probabilidad de pasar a la acción. -->
+          <label class="calc__commit">
+            <input type="checkbox" id="calc-commit">
+            <span>Me comprometo a empezar a ahorrar <strong>este mes</strong>.</span>
+          </label>
+          <p class="calc__commit-msg" id="calc-commit-msg" hidden>¡Ese es el espíritu! 🎯 Tu yo del futuro lo está celebrando.</p>
+
           <a href="#descarga" class="btn btn--primary btn--block">Quiero ahorrar esto</a>
         </form>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         PRUEBA SOCIAL — testimonios + cifras
+         CIALDINI · PRUEBA SOCIAL: mostramos que mucha gente parecida al
+         usuario (misma edad, mismas metas) ya confía y ahorra con Kápital.
+         =================================================================== -->
+    <section class="social section" id="opiniones">
+      <div class="container">
+        <header class="section__head">
+          <span class="section__eyebrow">Lo que dice la comunidad</span>
+          <h2 class="section__title">+250.000 jóvenes ya ahorran con Kápital</h2>
+          <p class="section__subtitle">No te fíes solo de nosotros: mira lo que cuentan quienes ya empezaron.</p>
+        </header>
+
+        <div class="social__stats">
+          <div class="social__stat"><strong>250.000+</strong><span>usuarios activos</span></div>
+          <div class="social__stat"><strong>4,8★</strong><span>valoración media</span></div>
+          <div class="social__stat"><strong>18 M€</strong><span>ahorrados en comunidad</span></div>
+          <div class="social__stat"><strong>92%</strong><span>sigue ahorrando a los 6 meses</span></div>
+        </div>
+
+        <div class="social__grid">
+          <figure class="social__card">
+            <div class="social__stars" aria-label="5 de 5 estrellas">★★★★★</div>
+            <blockquote>“Llevaba toda la vida diciendo que ahorraría y nunca podía. Con los redondeos he juntado 400€ sin enterarme.”</blockquote>
+            <figcaption><span class="social__ava" aria-hidden="true">MG</span> <span><strong>Marta G.</strong> · 19 años</span></figcaption>
+          </figure>
+          <figure class="social__card">
+            <div class="social__stars" aria-label="5 de 5 estrellas">★★★★★</div>
+            <blockquote>“Los microlearnings me han enseñado más de dinero que 4 años de instituto. Y en plan ameno.”</blockquote>
+            <figcaption><span class="social__ava" aria-hidden="true">DR</span> <span><strong>David R.</strong> · 22 años</span></figcaption>
+          </figure>
+          <figure class="social__card">
+            <div class="social__stars" aria-label="5 de 5 estrellas">★★★★★</div>
+            <blockquote>“Me apunté por el reto de 30 días con mis amigas. Ahora competimos por ahorrar más. Muy adictivo.”</blockquote>
+            <figcaption><span class="social__ava" aria-hidden="true">NL</span> <span><strong>Nerea L.</strong> · 20 años</span></figcaption>
+          </figure>
+        </div>
       </div>
     </section>
 
@@ -239,9 +315,12 @@
          =================================================================== -->
     <section class="manifesto section" id="manifiesto">
       <div class="container">
+        <!-- CIALDINI · UNIDAD: reforzamos el "nosotros" y la identidad compartida
+             (somos GenZ, como tú) para crear pertenencia, no solo simpatía. -->
         <header class="section__head">
           <span class="section__eyebrow">Manifiesto GenZ</span>
-          <h2 class="section__title">Lo que creemos sobre el dinero</h2>
+          <h2 class="section__title">No somos un banco de traje y corbata. Somos GenZ, como tú.</h2>
+          <p class="section__subtitle">Esto no es una app cualquiera: es una comunidad de gente de tu edad remando en la misma dirección.</p>
         </header>
 
         <div class="manifesto__grid">
@@ -255,6 +334,12 @@
             <li><span>04</span> Tu dinero, tus reglas, tu ritmo.</li>
             <li><span>05</span> Empezar pronto es el mayor superpoder financiero que existe.</li>
           </ul>
+        </div>
+
+        <!-- CIALDINI · UNIDAD: llamada a formar parte del grupo. -->
+        <div class="manifesto__unity">
+          <p>Más de <strong>250.000 personas de la GenZ</strong> ya forman parte. Este también es tu sitio.</p>
+          <a href="#descarga" class="btn btn--primary">Únete a la comunidad</a>
         </div>
       </div>
     </section>
@@ -307,6 +392,33 @@
     </section>
 
     <!-- ===================================================================
+         REGALO GRATUITO (lead magnet)
+         CIALDINI · RECIPROCIDAD: damos algo de valor primero y sin compromiso;
+         el usuario siente el impulso natural de corresponder.
+         =================================================================== -->
+    <section class="gift section" id="guia">
+      <div class="container gift__inner">
+        <div class="gift__text">
+          <span class="section__eyebrow">Un regalo para ti</span>
+          <h2 class="section__title">Llévate gratis la guía «30 trucos para ahorrar siendo GenZ»</h2>
+          <p class="section__subtitle">Sin coste y sin compromiso. Te la enviamos al instante; después decides tú si sigues.</p>
+          <ul class="gift__list">
+            <li>✅ Trucos rápidos que puedes aplicar hoy mismo</li>
+            <li>✅ Plantilla de presupuesto 50/30/20 lista para usar</li>
+            <li>✅ El método para ahorrar tu primer objetivo</li>
+          </ul>
+        </div>
+        <form class="gift__form" id="gift-form" novalidate>
+          <label for="gift-email">Tu email</label>
+          <input type="email" id="gift-email" name="email" required placeholder="tucorreo@email.com" autocomplete="email">
+          <button type="submit" class="btn btn--primary btn--block">Enviar mi guía gratis</button>
+          <small class="gift__note">🔒 Nos importa tu privacidad. Cero spam, baja cuando quieras.</small>
+          <p class="gift__success" id="gift-success" hidden>¡Hecho! 🎉 Revisa tu correo, te hemos enviado la guía. Un pequeño detalle de nuestra parte.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===================================================================
          PREGUNTAS FRECUENTES (acordeón)
          =================================================================== -->
     <section class="faq section" id="faq">
@@ -350,6 +462,8 @@
          =================================================================== -->
     <section class="download section" id="descarga">
       <div class="container download__inner">
+        <!-- CIALDINI · ESCASEZ: recordamos que la oferta de lanzamiento es limitada. -->
+        <span class="download__urgency">⏳ Oferta de lanzamiento: quedan pocas plazas con 3 meses Premium gratis</span>
         <h2 class="download__title">Tu yo del futuro te lo va a agradecer</h2>
         <p class="download__text">Descarga Kápital y empieza a ahorrar en menos de 2 minutos.</p>
         <div class="download__badges">
@@ -452,6 +566,61 @@
         <button class="btn btn--primary" data-cookie="save">Guardar preferencias</button>
       </div>
     </div>
+  </div>
+
+  <!-- ===================================================================
+       AVISOS DE ACTIVIDAD EN VIVO (esquina inferior izquierda)
+       CIALDINI · PRUEBA SOCIAL: notificaciones reales-time de que otras
+       personas están usando la app ahora mismo.
+       =================================================================== -->
+  <div class="live-toasts" id="live-toasts" aria-live="polite" aria-label="Actividad reciente"></div>
+
+  <!-- ===================================================================
+       WIDGETS FLOTANTES (esquina inferior derecha)
+       CIALDINI · SIMPATÍA (AGRADO): una persona real, cercana y disponible
+       genera confianza y hace la marca más agradable y humana.
+       Estructura: chat online (avatar + desplegable) y, debajo, WhatsApp.
+       =================================================================== -->
+  <div class="fab-stack">
+    <!-- Desplegable del chat online -->
+    <div class="chat-panel" id="chat-panel" role="dialog" aria-label="Chat online con el equipo de Kápital" hidden>
+      <div class="chat-panel__header">
+        <img src="img/avatar-agente.svg" alt="" class="chat-panel__avatar" width="44" height="44">
+        <div class="chat-panel__who">
+          <strong>Laura · Equipo Kápital</strong>
+          <span class="chat-panel__status"><i></i> En línea · responde en ~2 min</span>
+        </div>
+        <button class="chat-panel__close" data-chat-close aria-label="Cerrar chat">&times;</button>
+      </div>
+      <div class="chat-panel__body" id="chat-body">
+        <div class="chat-msg chat-msg--in">
+          <p>¡Hola! 👋 Soy Laura, del equipo de Kápital. ¿En qué puedo ayudarte?</p>
+        </div>
+        <div class="chat-quick" id="chat-quick">
+          <button type="button" class="chat-quick__btn" data-quick="gratis">¿Es gratis?</button>
+          <button type="button" class="chat-quick__btn" data-quick="empezar">¿Cómo empiezo?</button>
+          <button type="button" class="chat-quick__btn" data-quick="seguro">¿Es seguro?</button>
+        </div>
+      </div>
+      <form class="chat-panel__input" id="chat-form">
+        <input type="text" id="chat-text" placeholder="Escribe tu mensaje…" autocomplete="off" aria-label="Escribe tu mensaje">
+        <button type="submit" aria-label="Enviar mensaje">➤</button>
+      </form>
+      <a class="chat-panel__wa" href="https://wa.me/34600000000?text=Hola%2C%20quiero%20saber%20m%C3%A1s%20de%20K%C3%A1pital" target="_blank" rel="noopener">
+        <img src="img/whatsapp.svg" alt="" width="18" height="18"> Continuar en WhatsApp
+      </a>
+    </div>
+
+    <!-- Botón: avatar de chat online -->
+    <button class="fab fab--chat" id="chat-toggle" aria-expanded="false" aria-controls="chat-panel" aria-label="Abrir chat online">
+      <img src="img/avatar-agente.svg" alt="" class="fab__avatar" width="56" height="56">
+      <span class="fab__dot" aria-hidden="true"></span>
+    </button>
+
+    <!-- Botón: WhatsApp -->
+    <a class="fab fab--wa" href="https://wa.me/34600000000?text=Hola%2C%20quiero%20saber%20m%C3%A1s%20de%20K%C3%A1pital" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+      <img src="img/whatsapp.svg" alt="" class="fab__icon" width="30" height="30">
+    </a>
   </div>
 
   <!-- Scripts -->

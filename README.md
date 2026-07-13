@@ -50,6 +50,31 @@ En `index.html`, dentro del bloque «ANALÍTICA Y PÍXELES DE SEGUIMIENTO», des
 la etiqueta que uses (Google Tag Manager, GA4 o Meta Pixel) y sustituye el
 identificador de ejemplo (`GTM-XXXXXXX`, `G-XXXXXXXXXX`, …) por el real.
 
+## Principios de persuasión de Robert Cialdini (aplicados)
+
+Cada principio está implementado en un elemento concreto y **etiquetado en el código**
+con un comentario `CIALDINI · <PRINCIPIO>`:
+
+| Principio | Dónde se aplica |
+|---|---|
+| **Reciprocidad** | Sección «Regalo para ti»: guía gratuita (lead magnet) sin compromiso. |
+| **Compromiso y coherencia** | Casilla de micro-compromiso en la calculadora («Me comprometo a empezar este mes»). |
+| **Prueba social** | Sección de testimonios + cifras y avisos de actividad en vivo (esquina inferior izquierda). |
+| **Autoridad** | Franja de confianza: cifrado, cumplimiento normativo, reseñas y menciones. |
+| **Simpatía (agrado)** | Chat online con una persona real (Laura) en el widget flotante. |
+| **Escasez** | Barra de anuncio con oferta de lanzamiento limitada + cuenta atrás, reforzada en el CTA final. |
+| **Unidad** | Manifiesto reenfocado como comunidad GenZ («Somos GenZ, como tú») + «Únete a la comunidad». |
+
+## Widget flotante (chat online + WhatsApp)
+
+En la esquina inferior derecha, de forma *sticky*:
+- **Icono de WhatsApp** (abajo del todo) → enlace `wa.me` (sustituye el número de ejemplo `34600000000`).
+- **Avatar de chat online** (justo encima) con indicador «en línea» y **desplegable de chat**:
+  cabecera con agente, respuestas rápidas, campo de mensaje con respuestas automáticas por
+  palabras clave y botón «Continuar en WhatsApp».
+
+Los textos, testimonios y cifras son **ilustrativos** (proyecto académico); ajústalos a datos reales.
+
 ## Cómo verlo en local
 
 Al ser un sitio estático, basta con abrir `index.html` en el navegador.
