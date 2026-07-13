@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- ===================================================================
+       META ETIQUETAS
+       =================================================================== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kápital — La app de ahorro para la GenZ</title>
+  <meta name="description" content="Kápital es la aplicación de ahorro pensada para la GenZ: ahorra sin darte cuenta, aprende con microlearnings y alcanza tus objetivos. Descárgala gratis.">
+  <meta name="theme-color" content="#6C5CE7">
+  <link rel="canonical" href="https://www.kapital.example/">
+
+  <!-- Open Graph / redes sociales -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kápital — La app de ahorro para la GenZ">
+  <meta property="og:description" content="Ahorra sin darte cuenta, aprende con microlearnings y alcanza tus objetivos.">
+  <meta property="og:image" content="https://www.kapital.example/img/hero-app.svg">
+  <meta property="og:url" content="https://www.kapital.example/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+
+  <!-- ===================================================================
+       CONSENT MODE V2 (por defecto DENEGADO — se actualiza tras el consentimiento)
+       Debe cargarse ANTES de cualquier etiqueta de Google (GA4, Ads, GTM).
+       =================================================================== -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'analytics_storage': 'denied',
+      'functionality_storage': 'denied',
+      'personalization_storage': 'denied',
+      'security_storage': 'granted',
+      'wait_for_update': 500
+    });
+    gtag('set', 'ads_data_redaction', true);
+    gtag('set', 'url_passthrough', true);
+  </script>
+
+  <!-- ===================================================================
+       ANALÍTICA Y PÍXELES DE SEGUIMIENTO
+       Sustituye los identificadores de ejemplo por los reales.
+       Estas etiquetas respetan el Consent Mode configurado arriba.
+       =================================================================== -->
+
+  <!-- Google Tag Manager (recomendado) — sustituye GTM-XXXXXXX
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+  -->
+
+  <!-- Google Analytics 4 (alternativa a GTM) — sustituye G-XXXXXXXXXX
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>gtag('js', new Date()); gtag('config', 'G-XXXXXXXXXX');</script>
+  -->
+
+  <!-- Meta Pixel — sustituye 000000000000000
+  <script>!function(f,b,e,v,n,t,s){...};fbq('init','000000000000000');fbq('track','PageView');</script>
+  -->
+
+  <!-- ===================================================================
+       TIPOGRAFÍAS Y ESTILOS
+       =================================================================== -->
+  <!-- Cuando añadas Poppins a /fonts, descomenta este preload:
+  <link rel="preload" href="fonts/Poppins-SemiBold.woff2" as="font" type="font/woff2" crossorigin> -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <!-- Enlace de accesibilidad para saltar al contenido -->
+  <a href="#hero" class="skip-link">Saltar al contenido</a>
+
+  <!-- ===================================================================
+       HEADER / CABECERA
+       Desktop: logotipo · menú de navegación · CTA
+       Móvil:   logotipo · CTA · menú hamburguesa
+       =================================================================== -->
+  <header class="site-header" id="inicio">
+    <div class="container header__inner">
+      <a href="#hero" class="header__logo" aria-label="Inicio — Kápital">
+        <img src="img/logo.svg" alt="Kápital" width="140" height="34">
+      </a>
+
+      <nav class="nav" id="nav-principal" aria-label="Navegación principal">
+        <button class="nav__close" aria-label="Cerrar menú" data-menu-close>&times;</button>
+        <ul class="nav__list">
+          <li><a href="#hero" class="nav__link">Inicio</a></li>
+          <li><a href="#manifiesto" class="nav__link">Manifiesto GenZ</a></li>
+          <li><a href="#funcionalidades" class="nav__link">Funcionalidades</a></li>
+          <li><a href="#microlearnings" class="nav__link">Microlearnings</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <a href="#descarga" class="btn btn--primary header__cta">Descarga la aplicación</a>
+        <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-principal" data-menu-open>
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================================================================
+         HERO
+         Dos columnas: texto (izquierda) + imagen (derecha)
+         =================================================================== -->
+    <section class="hero" id="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <span class="badge-pill">💸 Tu dinero, tu ritmo</span>
+          <h1 class="hero__title">Ahorrar por fin es <span class="text-gradient">fácil</span> (y hasta mola).</h1>
+          <p class="hero__text">
+            Kápital redondea tus compras, automatiza tu ahorro y te enseña finanzas
+            en píldoras de 60 segundos. Sin comisiones, sin letra pequeña y sin sermones.
+          </p>
+          <div class="hero__actions">
+            <a href="#descarga" class="btn btn--primary btn--lg">Descarga la aplicación</a>
+            <a href="#funcionalidades" class="btn btn--ghost btn--lg">Ver cómo funciona</a>
+          </div>
+          <ul class="hero__proof">
+            <li><strong>+250.000</strong> jóvenes ahorrando</li>
+            <li><strong>4,8★</strong> en las tiendas</li>
+            <li><strong>0€</strong> de comisiones</li>
+          </ul>
+        </div>
+
+        <div class="hero__media">
+          <img src="img/hero-app.svg" alt="Pantalla de la aplicación Kápital mostrando el ahorro acumulado" width="360" height="440" loading="eager">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         ¿CÓMO FUNCIONA? / USP — 4 columnas + CTA centrado
+         Cada columna: icono · título · texto
+         =================================================================== -->
+    <section class="usp section" id="funcionalidades">
+      <div class="container">
+        <header class="section__head">
+          <span class="section__eyebrow">¿Cómo funciona?</span>
+          <h2 class="section__title">Cuatro superpoderes para tu bolsillo</h2>
+          <p class="section__subtitle">Todo lo que necesitas para empezar a ahorrar hoy mismo, en una sola app.</p>
+        </header>
+
+        <div class="usp__grid">
+          <article class="usp__card">
+            <img src="img/icon-goals.svg" alt="" class="usp__icon" width="48" height="48" aria-hidden="true">
+            <h3 class="usp__card-title">Objetivos claros</h3>
+            <p class="usp__card-text">Crea metas —un viaje, el carné, un finde— y mira cómo tu hucha crece hacia ellas.</p>
+          </article>
+
+          <article class="usp__card">
+            <img src="img/icon-auto.svg" alt="" class="usp__icon" width="48" height="48" aria-hidden="true">
+            <h3 class="usp__card-title">Ahorro automático</h3>
+            <p class="usp__card-text">Redondeamos tus compras y apartamos la diferencia. Ahorras sin ni siquiera notarlo.</p>
+          </article>
+
+          <article class="usp__card">
+            <img src="img/icon-learn.svg" alt="" class="usp__icon" width="48" height="48" aria-hidden="true">
+            <h3 class="usp__card-title">Microlearnings</h3>
+            <p class="usp__card-text">Aprende finanzas en píldoras de 60 segundos. Sin tecnicismos ni rollos aburridos.</p>
+          </article>
+
+          <article class="usp__card">
+            <img src="img/icon-secure.svg" alt="" class="usp__icon" width="48" height="48" aria-hidden="true">
+            <h3 class="usp__card-title">100% seguro</h3>
+            <p class="usp__card-text">Tu dinero protegido y cifrado. Cumplimos la normativa europea al 100%.</p>
+          </article>
+        </div>
+
+        <div class="usp__cta">
+          <a href="#descarga" class="btn btn--primary btn--lg">Empieza a ahorrar gratis</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         CALCULADORA DE AHORRO
+         =================================================================== -->
+    <section class="calc section section--alt" id="calculadora">
+      <div class="container calc__grid">
+        <div class="calc__intro">
+          <span class="section__eyebrow">Calculadora de ahorro</span>
+          <h2 class="section__title">¿Cuánto puedes llegar a ahorrar?</h2>
+          <p class="section__subtitle">
+            Ajusta los valores y descubre cuánto tendrás en el futuro con Kápital.
+            El interés se calcula de forma compuesta y mensual.
+          </p>
+          <p class="calc__disclaimer">* Cálculo orientativo. No constituye asesoramiento financiero ni garantiza rentabilidad.</p>
+        </div>
+
+        <form class="calc__panel" id="calc-form" novalidate>
+          <div class="calc__field">
+            <label for="calc-monthly">Ahorro mensual: <output id="calc-monthly-out">50 €</output></label>
+            <input type="range" id="calc-monthly" min="10" max="500" step="10" value="50">
+          </div>
+
+          <div class="calc__field">
+            <label for="calc-years">Durante: <output id="calc-years-out">5 años</output></label>
+            <input type="range" id="calc-years" min="1" max="30" step="1" value="5">
+          </div>
+
+          <div class="calc__field">
+            <label for="calc-rate">Rentabilidad anual estimada: <output id="calc-rate-out">3%</output></label>
+            <input type="range" id="calc-rate" min="0" max="10" step="0.5" value="3">
+          </div>
+
+          <div class="calc__result" aria-live="polite">
+            <div class="calc__result-item">
+              <span class="calc__result-label">Tú aportas</span>
+              <strong class="calc__result-value" id="calc-contributed">3.000 €</strong>
+            </div>
+            <div class="calc__result-item calc__result-item--highlight">
+              <span class="calc__result-label">Tendrás</span>
+              <strong class="calc__result-value" id="calc-total">3.242 €</strong>
+            </div>
+            <div class="calc__result-item">
+              <span class="calc__result-label">Intereses ganados</span>
+              <strong class="calc__result-value" id="calc-interest">242 €</strong>
+            </div>
+          </div>
+
+          <a href="#descarga" class="btn btn--primary btn--block">Quiero ahorrar esto</a>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         MANIFIESTO GENZ
+         =================================================================== -->
+    <section class="manifesto section" id="manifiesto">
+      <div class="container">
+        <header class="section__head">
+          <span class="section__eyebrow">Manifiesto GenZ</span>
+          <h2 class="section__title">Lo que creemos sobre el dinero</h2>
+        </header>
+
+        <div class="manifesto__grid">
+          <blockquote class="manifesto__quote">
+            <p>“El dinero no debería dar ansiedad. Debería darte <span class="text-gradient">libertad</span>.”</p>
+          </blockquote>
+          <ul class="manifesto__list">
+            <li><span>01</span> Ahorrar no es privarse, es elegir tu futuro.</li>
+            <li><span>02</span> Las finanzas deberían enseñarse en el insti. Como no lo hicieron, lo hacemos nosotros.</li>
+            <li><span>03</span> Cero comisiones escondidas. Cero letra pequeña.</li>
+            <li><span>04</span> Tu dinero, tus reglas, tu ritmo.</li>
+            <li><span>05</span> Empezar pronto es el mayor superpoder financiero que existe.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         MICROLEARNINGS
+         =================================================================== -->
+    <section class="learn section section--alt" id="microlearnings">
+      <div class="container">
+        <header class="section__head">
+          <span class="section__eyebrow">Microlearnings</span>
+          <h2 class="section__title">Finanzas en 60 segundos</h2>
+          <p class="section__subtitle">Píldoras cortas para que domines tu dinero sin morir de aburrimiento.</p>
+        </header>
+
+        <div class="learn__grid">
+          <article class="learn__card">
+            <span class="learn__tag">Básico</span>
+            <span class="learn__time">⏱ 1 min</span>
+            <h3 class="learn__title">Qué es el interés compuesto</h3>
+            <p class="learn__text">El truco por el que tu dinero genera dinero. El mejor amigo de tu yo del futuro.</p>
+            <a href="#descarga" class="learn__link">Ver la píldora →</a>
+          </article>
+
+          <article class="learn__card">
+            <span class="learn__tag">Hábitos</span>
+            <span class="learn__time">⏱ 1 min</span>
+            <h3 class="learn__title">La regla 50/30/20</h3>
+            <p class="learn__text">Cómo repartir tu paga o tu sueldo sin liarte y sin quedarte a cero a mitad de mes.</p>
+            <a href="#descarga" class="learn__link">Ver la píldora →</a>
+          </article>
+
+          <article class="learn__card">
+            <span class="learn__tag">Objetivos</span>
+            <span class="learn__time">⏱ 2 min</span>
+            <h3 class="learn__title">Tu primer fondo de emergencia</h3>
+            <p class="learn__text">Cuánto guardar para dormir tranquilo cuando la vida se pone cuesta arriba.</p>
+            <a href="#descarga" class="learn__link">Ver la píldora →</a>
+          </article>
+
+          <article class="learn__card">
+            <span class="learn__tag">Inversión</span>
+            <span class="learn__time">⏱ 2 min</span>
+            <h3 class="learn__title">Invertir sin miedo desde 1 €</h3>
+            <p class="learn__text">Empieza pequeño, entiende el riesgo y deja que el tiempo trabaje por ti.</p>
+            <a href="#descarga" class="learn__link">Ver la píldora →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         PREGUNTAS FRECUENTES (acordeón)
+         =================================================================== -->
+    <section class="faq section" id="faq">
+      <div class="container container--narrow">
+        <header class="section__head">
+          <span class="section__eyebrow">Preguntas frecuentes</span>
+          <h2 class="section__title">Resolvemos tus dudas</h2>
+        </header>
+
+        <div class="faq__list">
+          <details class="faq__item">
+            <summary class="faq__question">¿Kápital es gratis?</summary>
+            <div class="faq__answer"><p>Sí. Abrir tu cuenta y ahorrar es 100% gratuito. No cobramos comisiones de mantenimiento ni por retirar tu dinero.</p></div>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__question">¿Es seguro mi dinero?</summary>
+            <div class="faq__answer"><p>Tu dinero está protegido y cifrado, y operamos cumpliendo la normativa europea de protección de datos y de servicios de pago.</p></div>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__question">¿Desde qué edad puedo usarla?</summary>
+            <div class="faq__answer"><p>Puedes usar Kápital a partir de los 14 años con autorización de tus tutores legales, y de forma autónoma a partir de los 18.</p></div>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__question">¿Cómo funciona el ahorro automático?</summary>
+            <div class="faq__answer"><p>Redondeamos cada compra al euro superior y apartamos la diferencia en tu hucha. Tú decides cuándo retirarla, sin penalizaciones.</p></div>
+          </details>
+
+          <details class="faq__item">
+            <summary class="faq__question">¿En qué dispositivos está disponible?</summary>
+            <div class="faq__answer"><p>Kápital está disponible para iOS y Android. Descárgala gratis desde la App Store o Google Play.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         CTA FINAL / DESCARGA
+         =================================================================== -->
+    <section class="download section" id="descarga">
+      <div class="container download__inner">
+        <h2 class="download__title">Tu yo del futuro te lo va a agradecer</h2>
+        <p class="download__text">Descarga Kápital y empieza a ahorrar en menos de 2 minutos.</p>
+        <div class="download__badges">
+          <a href="#" aria-label="Descargar en la App Store"><img src="img/badge-appstore.svg" alt="Descargar en la App Store" width="140" height="44"></a>
+          <a href="#" aria-label="Disponible en Google Play"><img src="img/badge-googleplay.svg" alt="Disponible en Google Play" width="140" height="44"></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================================================================
+       FOOTER / PIE DE PÁGINA
+       Logotipo · enlaces legales
+       =================================================================== -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        <img src="img/logo-white.svg" alt="Kápital" width="140" height="34">
+        <p class="site-footer__tagline">La app de ahorro de la GenZ.</p>
+      </div>
+
+      <nav class="site-footer__nav" aria-label="Enlaces legales">
+        <h3 class="site-footer__heading">Legal</h3>
+        <ul>
+          <li><a href="aviso-legal.html">Aviso legal</a></li>
+          <li><a href="politica-privacidad.html">Política de privacidad</a></li>
+          <li><a href="politica-cookies.html">Política de cookies</a></li>
+          <li><a href="#" data-cookie-settings>Configurar cookies</a></li>
+        </ul>
+      </nav>
+
+      <nav class="site-footer__nav" aria-label="Navegación">
+        <h3 class="site-footer__heading">Explora</h3>
+        <ul>
+          <li><a href="#manifiesto">Manifiesto GenZ</a></li>
+          <li><a href="#funcionalidades">Funcionalidades</a></li>
+          <li><a href="#microlearnings">Microlearnings</a></li>
+          <li><a href="#faq">Preguntas frecuentes</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="container site-footer__bottom">
+      <p>&copy; <span id="year">2026</span> Kápital. Proyecto académico — ESIC / MMD Pozuelo. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ===================================================================
+       BANNER DE COOKIES (RGPD + Consent Mode V2)
+       =================================================================== -->
+  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-live="polite" aria-label="Aviso de cookies" hidden>
+    <div class="cookie-banner__inner">
+      <div class="cookie-banner__text">
+        <h2 class="cookie-banner__title">🍪 Usamos cookies</h2>
+        <p>
+          Utilizamos cookies propias y de terceros para analizar el tráfico y mejorar tu experiencia.
+          Puedes aceptar todas, rechazarlas o configurarlas. Más información en nuestra
+          <a href="politica-cookies.html">Política de cookies</a>.
+        </p>
+      </div>
+      <div class="cookie-banner__actions">
+        <button class="btn btn--ghost" data-cookie="reject">Rechazar</button>
+        <button class="btn btn--ghost" data-cookie="settings">Configurar</button>
+        <button class="btn btn--primary" data-cookie="accept">Aceptar todas</button>
+      </div>
+    </div>
+
+    <!-- Panel de configuración granular -->
+    <div class="cookie-settings" id="cookie-settings" hidden>
+      <h3 class="cookie-settings__title">Configura tus preferencias</h3>
+      <label class="cookie-settings__row">
+        <span>
+          <strong>Necesarias</strong>
+          <small>Imprescindibles para el funcionamiento del sitio. No se pueden desactivar.</small>
+        </span>
+        <input type="checkbox" checked disabled>
+      </label>
+      <label class="cookie-settings__row">
+        <span>
+          <strong>Analíticas</strong>
+          <small>Nos ayudan a entender cómo usas la web (analytics_storage).</small>
+        </span>
+        <input type="checkbox" data-consent="analytics_storage">
+      </label>
+      <label class="cookie-settings__row">
+        <span>
+          <strong>Marketing</strong>
+          <small>Publicidad personalizada (ad_storage, ad_user_data, ad_personalization).</small>
+        </span>
+        <input type="checkbox" data-consent="ad_storage">
+      </label>
+      <label class="cookie-settings__row">
+        <span>
+          <strong>Personalización</strong>
+          <small>Recuerdan tus preferencias (personalization_storage, functionality_storage).</small>
+        </span>
+        <input type="checkbox" data-consent="personalization_storage">
+      </label>
+      <div class="cookie-settings__actions">
+        <button class="btn btn--primary" data-cookie="save">Guardar preferencias</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/cookies.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
